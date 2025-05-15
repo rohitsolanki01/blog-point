@@ -32,7 +32,9 @@ let blogs = [
     }
 ];
 
-
+app.get('/', (req, res) => {
+    res.redirect('/blogs');
+  });
 app.get("/blogs" ,(req,res) => {
     res.render("index.ejs" , {blogs});
 });
