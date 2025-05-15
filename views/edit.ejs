@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit your blog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('includes/navabar') %>
+    <h2 class="secondry">edit your blog</h2>
+    <div class="form">
+        <form action="/blogs/<%= blog.id %>?_method=PATCH" method="POST">
+            <input type="text" name="title" placeholder="Title" required>
+            <textarea name="content" placeholder="Content" required><%= blog.content %></textarea>
+            <button type="submit">edit your blog</button>
+          </form>
+          
+    </div>
+    <%- include('includes/footer') %>
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family:"Lato";
+}
+
+.blog_show{
+    display: block;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+}
+
+.blog_show h4 {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog_show h6 {
+    color: #9E9E9E;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.blog_show p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #2a2a2a;
+    border-left: 3px solid #4CAF50;
+    border-radius: 0 4px 4px 0;
+}
+.back{
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+}
+.back:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+.back:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(76, 175, 80, 0.3);
+}
+.back a{
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(76, 175, 80, 0.3);
+}

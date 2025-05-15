@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Blog point - fresh and new blogs is here</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <p>Blog - Point</p>
+        </div>
+    </nav>
+    <h1 class="heading-main">Fresh blogs is here</h1>
+    <h3 class="second-heading">Trending blogs:)</h3>
+    <a  class="add-blog"  href="http://localhost:8080/blogs/new">add blog</a>
+    <div>
+        <% for(let blog of blogs){ %>
+            <div class="blog">
+                <h4>@<%= blog.username %></h4>
+                <h6>Title: <%= blog.title %></h6>
+                <p><%= blog.content %>  <br>    <a href="http://localhost:8080/blogs/<%= blog.id %>" class="back">expolor</a><a href="http://localhost:8080/blogs/<%= blog.id %>/edit" class="back">edit</a>
+                    <a href="http://localhost:8080/blogs/<%= blog.id %>/delete" class="back">delete</a>
+                </p>
+          
+            </div>
+            <% } %> 
+          
+    </div>
+    <%- include('includes/footer') %>
+</body>
+</html>
