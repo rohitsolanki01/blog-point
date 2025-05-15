@@ -254,3 +254,24 @@ div p .back{
     color: #BB86FC;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 1rem;
+    }
+    .footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0;
+    }
+    .footer-content {
+        gap: 0.5rem;
+    }
+    .footer p {
+        font-size: 0.7rem;
+    }
+}
